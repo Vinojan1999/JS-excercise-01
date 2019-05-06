@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> JS Exersice </title>
+
+</head>
+
+<body>
+
+<html>
+ <body>
+
+  // Q 01
+    <p id="demo"></p>
+
+    <script>
+   document.getElementById("demo").innerHTML = Math.pow(6,2);
+    </script>
+
+    <br> <br>
+
+  // Q 02
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+  <script>
+
+   var num1;
+   var num2;
+   function addNum(num1 , num2) {
+ return num1 + num2;
+}
+   function multiNum(num1 , num2) {
+ return num1 * num2;
+}
+   function subtractNum(num1 , num2) {
+ return num1 - num2;
+}
+   function divideNum(num1 , num2) {
+ return num1 / num2;
+}
+
+document.getElementById("demo1").innerHTML = "The addition of the two numbers is" +" " + addNum(6,5);
+document.getElementById("demo2").innerHTML = "The multiplication of the two numbers is" +" " + multiNum(6,5);
+document.getElementById("demo3").innerHTML = "The subtraction of the two numbers is" +" " + subtractNum(6,5);
+document.getElementById("demo4").innerHTML = "The division of the two numbers is" +" " + divideNum(6,5);
+
+</script>
+
+  <br> <br>
+
+  // Q 03
+   <button onclick="alert('Hello World')">Click here</button>
+
+  <br> <br>
+
+  // Q 04
+  <p id="demo5"></p>
+  <script>
+   var length;
+   var width;
+   var height;
+   function calculate(length,width,height){
+ return length*width*height;
+ }
+
+ document.getElementById("demo5").innerHTML = calculate(5,4,2);
+  </script>
+
+
+  <br> <br>
+
+  // Q 05
+  <p id="demo6"></p>
+  <script>
+  var person = {firstName : "Nimal" , lastName : "Raj" , age : 15, city : "Kandy"};
+  document.getElementById("demo6").innerHTML = "My name is" +" "+ person.firstName + " " + person.lastName
+  + "." + "I'm" + " " + person.age  + "   " + "years old." + "I live an" + " " + person.city + ".";
+  </script>
+
+  <br> <br>
+
+  // Q 06
+    <p id="demo7"></p>
+  <script>
+  var course = {courseName : "BIT", courseFee : "Rs 150 000", startDate :"12.06.2018", center : "Our Office"};
+  document.getElementById("demo7").innerHTML = "Course Name:" + " " + course.courseName + "<br>" + "Course Fee:" + " " + course.courseFee
+  + "<br>" + "Start Date:" + " " + "12.06.2018" + "<br>" + "Center:" + " " + course.center;
+  </script>
+
+
+</body>
+</html>
